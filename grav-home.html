@@ -1,0 +1,64 @@
+<style>
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+   .content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-weight: 700;
+      margin: 0 0 10px;
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0 auto 12px;
+    }
+  </style>
+
+  <div class="content">
+      {% include 'partials/banner-special-price.html.twig' with { 'wrap': 'centered' } %}
+    
+    <h2>Applying Filters in Smart Folders</h2>
+    <p>By default, Clean Email shows you all messages in your mailbox, regardless of the messages labels or folders.
+      
+  {% include 'partials/banner-special-price.html.twig' with { 'wrap': 'wrap-right' } %}
+        
+  Therefore, you can see both starred and unstarred messages from any folder or label in your account. <br>
+  <i>Before</i> you take any action on a group of messages, use the <b>Filters</b> button in the Smart Folder to exclude
+  the messages you want to keep. That way, the only messages displayed will be ones that you actually want to remove or
+  delete.
+  </p>
+    <p>The Auto Clean feature lets you create rules that automatically clean incoming email messages before they ever reach your inbox.
+        This includes functions such as automatically archiving, trashing, or deleting unwanted messages; adding or removing stars or flags;
+        or delivering the messages to a different folder or label other than your inbox. </p>
+    
+      {% include 'partials/banner-special-price.html.twig' with { 'wrap': '' } %}
+      <p>You can click the <b>Filters</b> button more than once to apply more than one filter at the same time. In the
+      illustration above, the <b>Without star</b> filter is already applied, and the <b>Not Labeled</b> filter is being
+      added; since both filters are applied, neither messages with the selected label(s) nor any message with a star
+      will be included in the view. </p>
+
+    <h2>Applying Filters when Creating an Auto Clean Rule</h2>
+    <p>Since Auto Clean works primarily on future incoming messages, by default it would not affect starred or flagged
+      messages, nor messages in a specific folder or label. 
+        
+        {% include 'partials/banner-special-price.html.twig' with { 'wrap': 'wrap-left' } %}
+        
+      However, when you create an Auto Clean rule, you have the
+      option to apply the rule to existing messages that match the rule’s criteria. </p>
+
+    <p>It is important to use caution when creating an Auto Clean rule, to ensure that the rule only applies to messages
+      you want to affect. If you plan to enable the toggle to apply the new rule to existing messages, there are a
+      couple of precautions to be aware of. </p>
+
+    <p>For more information about Auto Clean rules, please see <a href="/help/auto-clean/create-rules"   target="_blank">Creating Auto Clean Rules</a>.
+    </p>
+    
+  </div>
